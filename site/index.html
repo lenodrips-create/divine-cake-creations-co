@@ -27,9 +27,9 @@ body {
 .wrap { max-width: 1280px; margin-inline: auto; display: flex; flex-direction: column; gap: clamp(48px, 8vw, 96px); padding-block: 0 48px; }
 
 /* Header */
-header { display: flex; align-items: center; gap: clamp(16px, 3vw, 40px); flex-wrap: wrap; margin-inline: -16px; }
-.logo { width: clamp(150px, 26vw, 330px); background: var(--logo-bg); display: block; }
-nav { display: flex; align-items: center; flex-wrap: wrap; gap: clamp(12px, 3vw, 44px); font-family: var(--display); font-size: clamp(1.25rem, 2.6vw, 2.25rem); padding-inline: 16px; }
+header { display: flex; align-items: center; gap: clamp(8px, 3vw, 40px); flex-wrap: nowrap; margin-inline: -16px; }
+.logo { width: clamp(96px, 26vw, 330px); flex-shrink: 0; background: var(--logo-bg); display: block; }
+nav { display: flex; align-items: center; flex-wrap: wrap; min-width: 0; gap: clamp(8px, 3vw, 44px) clamp(12px, 3vw, 44px); font-family: var(--display); font-size: clamp(1rem, 2.6vw, 2.25rem); padding-inline: 0 16px; }
 .pill { color: inherit; text-decoration: none; transition: filter .2s; }
 .pill:hover { filter: brightness(.95); }
 .pill:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
